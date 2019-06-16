@@ -1,8 +1,0 @@
-CS Resume Goals:
-C++ (Gaming Dev)
-Java (Android Dev)
-Javascript (Web Dev)
-HTML and CSS (Web Dev)
-Bootstrap (Web Dev) 
-Selenium (Web Dev)
-Python (Web Dev)

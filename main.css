@@ -2,6 +2,7 @@
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
+	color: #fff;
 }
 .nav-item{
 	font-size: 18px;
@@ -9,4 +10,33 @@ body{
 .navbar-brand{
 	font-size: 24px;
 	box-sizing: content-box;
+}
+/* Padding for the first three nav-links as the last one, "Contact" is in the corner*/
+.first_three{
+	padding: 0px 5px;
+}
+.name_area{
+	background-color: #1e1e1e;
+	height: 500px;
+}
+.name{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.icons{
+	justify-content: center;
+	text-align: center;
+	margin-top: 50px;
+}
+.circle_icon{
+	border-radius: 50%;
+	background: #fff;
+}
+.round_icon{
+	color: #1e1e1e;
+	border-radius: 10%;
+	background: #fff;
 }

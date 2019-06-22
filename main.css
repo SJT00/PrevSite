@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+html {
+  scroll-behavior: smooth;
+}	
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
@@ -11,13 +20,21 @@ body{
 	font-size: 24px;
 	box-sizing: content-box;
 }
+/* Assuring that navigation and jumbotrons can be compactly placed*/
+.navbar{
+	margin-bottom: 0px;
+}
+.jumbotron{
+	margin-bottom: 0px;
+}
 /* Padding for the first three nav-links as the last one, "Contact" is in the corner*/
 .first_three{
 	padding: 0px 5px;
 }
-.name_area{
+/* Home_area Start*/
+.Home_area{
 	background-color: #1e1e1e;
-	height: 500px;
+	height: 515px;
 }
 .name{
 	display: flex;
@@ -36,7 +53,19 @@ body{
 	background: #fff;
 }
 .round_icon{
-	color: #1e1e1e;
 	border-radius: 10%;
 	background: #fff;
 }
+/* Home_area End*/
+/* About_area Start*/
+.About_area{
+	background-color: #fff;
+	height: 515px;
+}
+/* About_area End*/
+/* Projects_area Start*/
+.Projects_area{
+	background-color: #1e1e1e;
+	height: 515px;
+}
+/* Projects_area End*/

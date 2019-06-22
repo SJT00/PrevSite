@@ -12,9 +12,9 @@
 	<!-- Main CSS/ Javascript-->
 	<link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<!-- Nav Bar Starts Here-->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top border-bottom">
 		<div class="container">
 			<a class="navbar-brand" href="#">
 				<span class="border border-dark">SJT</span>
@@ -27,16 +27,17 @@
 		<!-- Normal Nav Bar-->
 		<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 			<ul class="nav navbar-nav menu_nav ml-auto">
-				<li class="nav-item first_three"><a class="nav-link text-dark" href="#">About</a></li>
-				<li class="nav-item first_three"><a class="nav-link text-dark" href="#">Projects</a></li>
-				<li class="nav-item first_three"><a class="nav-link text-dark" href="#">Resume</a></li>
-				<li class="nav-item"><a class="nav-link text-dark" href="#">Contact</a></li>
+				<li class="nav-item first_three"><a class="nav-link text-dark" href="#Home">Home</a></li>
+				<li class="nav-item first_three"><a class="nav-link text-dark " href="#About">About</a></li>
+				<li class="nav-item first_three"><a class="nav-link text-dark" href="#Projects">Projects</a></li>
+				<li class="nav-item"><a class="nav-link text-dark" href="#Contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
 <!-- Nav Bar Ends Here-->
-<div class="jumbotron name_area jumbotron-fluid">
+<!-- Home Section Start-->
+<div class="jumbotron Home_area jumbotron-fluid" id="Home">
 	<div class="container name">
 		<h1>Saad Jahanzeb Taj</h1>
 		<p>Honours Mathematics Student at the University of Waterloo</p>
@@ -66,7 +67,17 @@
 		</div>
 	</div>
 </div>
-<!--<img src="https://i.ytimg.com/vi/nu77ETGoxAY/maxresdefault.jpg" width="1000px" style="margin:0px 100px;">-->
+<!-- Home Section End-->
+<!-- About Section Start-->
+<div class="jumbotron About_area jumbotron-fluid" id="About">
+	
+</div>
+<!-- About Section End-->
+<!-- About Projects Start-->
+<div class="jumbotron Projects_area jumbotron-fluid" id="Projects">
+	
+</div>
+<!-- About Projects End-->
 <!-- Main JavaScript File -->
 <script src="scripts/script.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

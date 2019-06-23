@@ -1,25 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 html {
-  scroll-behavior: smooth;
-}	
-a.anchor {
-    display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden;
+	scroll-behavior: smooth;
 }
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	color: #fff;
 }
-.nav-item{
+/* Navbar Start*/
+.nav-link{
 	font-size: 18px;
+	position: relative;
 }
+/* Hovering highlight affect for nav-items start*/
+.nav-link::after {
+	content: "";
+	left: 0;
+	bottom:0;
+	width:100%;
+	height: 2px;
+	background: #1e1e1e;
+	position: absolute;
+	transform: scaleX(0);
+	transform-origin: bottom;
+	transition: transform 250ms ease-in;
+}
+.nav-link:hover::after {
+	transform: scaleX(1);
+}
+/* Hovering highlight affect for nav-items end*/
 .navbar-brand{
 	font-size: 24px;
-	box-sizing: content-box;
 }
+/* Hovering highlight affect for nav-brand start*/
+.navbar-brand::after {
+	content: "";
+	right: 42.35%;
+	bottom:5%;
+	width:100%;
+	height: 2px;
+	background: currentColor;
+	position: absolute;
+	transform: scaleX(0);
+	transform-origin: bottom;
+	transition: transform 250ms ease-in;
+}
+.navbar-brand:hover::after {
+	transform: scaleX(0.032);
+}
+/* Hovering highlight affect for nav-brand end*/
 /* Assuring that navigation and jumbotrons can be compactly placed*/
 .navbar{
 	margin-bottom: 0px;
@@ -27,10 +59,14 @@ body{
 .jumbotron{
 	margin-bottom: 0px;
 }
-/* Padding for the first three nav-links as the last one, "Contact" is in the corner*/
+/* Padding for the nav-links as the last one, "Contact" is in the corner and doesn't require right paddding*/
 .first_three{
 	padding: 0px 5px;
 }
+.last_one{
+	padding-left: 5px;
+}
+/* Navbar End*/
 /* Home_area Start*/
 .Home_area{
 	background-color: #1e1e1e;
@@ -42,7 +78,6 @@ body{
 	justify-content: center;
 	text-align: center;
 }
-
 .icons{
 	justify-content: center;
 	text-align: center;
@@ -51,21 +86,41 @@ body{
 .circle_icon{
 	border-radius: 50%;
 	background: #fff;
+	transition: background-color 250ms ease-in;
+}
+.circle_icon:hover{
+	background: #d6d4d3;
 }
 .round_icon{
 	border-radius: 10%;
 	background: #fff;
+	transition: background-color 250ms ease-in;
+}
+.round_icon:hover{
+	background: #d6d4d3;
+}
+.next_sect{
+	display: flex;
+    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	margin-top: 150px;
+	margin-left: 50%;
 }
 /* Home_area End*/
 /* About_area Start*/
 .About_area{
 	background-color: #fff;
 	height: 515px;
+	color: #1e1e1e;
 }
 /* About_area End*/
 /* Projects_area Start*/
 .Projects_area{
 	background-color: #1e1e1e;
 	height: 515px;
+	color: #fff;
 }
 /* Projects_area End*/

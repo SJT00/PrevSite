@@ -1,25 +1,26 @@
-$(document).ready(function () {
-	var slide_1 = document.getElementById("#S_invaders");
-	var slide_2 = document.getElementById("#N_Battle");
-	var slide_3 = document.getElementById("#Mobile_game");
-	var currentIndex = 0;
-})
-$('#Carousel-Projects').bind('slid', function() {
-	
-	currentIndex = $('div.active').index() + 1;
-	if(currentIndex==0){
-		slide_1.style.visibility = "visible";
-		slide_2.style.visibility = "hidden";
-		slide_3.style.visibility = "hidden";
-	}
-	else if(currentIndex==1){
-		slide_1.style.visibility = "hidden";
-		slide_2.style.visibility = "visible";
-		slide_3.style.visibility = "hidden";
-	}
-	else if(currentIndex==2){
-		slide_1.style.visibility = "hidden";
-		slide_2.style.visibility = "hidden";
-		slide_3.style.visibility = "visible";
-	}
+var navheight = 
+
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  // Add smooth scrolling on all links inside the navbar
+  $("#navbarContent a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().navbar
+      }, 40, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
 });

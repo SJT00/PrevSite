@@ -11,23 +11,23 @@
 	<!-- Main CSS-->
 	<link rel="stylesheet" href="main.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar">
 	<!-- Nav Bar Starts Here-->
 	<div class="container-fluid">
-		<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top border-bottom">
-			<a class="navbar-brand" href="#">
-				<span class="border border-dark">SJT</span>
+		<nav class="navbar navbar-expand-md navbar-custom fixed-top border-bottom">
+			<a class="navbar-brand" href="#" style="margin-left:1%;">
+				<span class="border border-dark text-dark rounded">SJT</span>
 			</a>
 			<!-- Collapsed Nav Bar-->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+			aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
-		</button>
+			</button>
 		<!-- Normal Nav Bar-->
-		<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="navbarContent">
 			<ul class="nav navbar-nav menu_nav ml-auto">
 				<li class="nav-item first_three"><a class="nav-link text-dark" href="#Home">Home</a></li>
-				<li class="nav-item first_three"><a class="nav-link text-dark " href="#About">About</a></li>
+				<li class="nav-item first_three"><a class="nav-link text-dark" href="#About">About</a></li>
 				<li class="nav-item first_three"><a class="nav-link text-dark" href="#Projects">Projects</a></li>
 				<li class="nav-item last_one"><a class="nav-link text-dark" href="#Contact">Contact</a></li>
 			</ul>
@@ -65,11 +65,9 @@
 			</a>
 		</div>
 	</div>
-	<div class="next_sect row circle_icon">
-		<a href="#About">
+	<a class="next_sect row circle_icon" href="#About">
 			<img src=".\assets\icons\down_pointer.svg" alt="Go to next section">
-		</a>
-	</div>
+	</a>
 </div>
 <!-- Home Section End-->
 <!-- About Section Start-->
@@ -77,12 +75,10 @@
 	<div class="col-12">
 		<h1>Welcome,</h1>
 		<p style="margin-left: 50px; margin-top:20px;">I am a second year Honours Mathematics student at the University of Waterloo, with an interest in Computer Science. In terms of my niche within Computer Science, I prefer creating interactive applications, whether they be games, organizational tools or just fun projects to learn new technologies.</p>
-		<p style="margin-left: 180px; margin-top:40px;">In terms of hobbies, I thoroughly enjoy all things history, particularly concerning the eastern world. I am also a big fan of music, particulary a mix of western and eastern instruments and vocals, examples including <a class="text-dark" href="https://en.wikipedia.org/wiki/Coldplay">Coldplay</a>,<a class="text-dark" href="https://en.wikipedia.org/wiki/Shafqat_Amanat_Ali"> Shafqat Amanat Ali </a>(currently listening to this),<a class="text-dark" href="https://en.wikipedia.org/wiki/Strings_(band)"> Strings</a>, and<a class="text-dark" href="https://en.wikipedia.org/wiki/A._R._Rahman"> A.R.Rahman</a></p>
-		<div class="next_sect container-fluid circle_icon justify-content-center">
-			<a href="#Projects">
+		<p style="margin-left: 180px; margin-top:40px;">In terms of hobbies, I thoroughly enjoy all things history, particularly concerning the eastern world. I am also a big fan of music, particulary a mix of western and eastern instruments and vocals, examples including <a class="text-dark" href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">Coldplay</a>, <a class="text-dark" href="https://en.wikipedia.org/wiki/Shafqat_Amanat_Ali" target="_blank">Shafqat Amanat Ali </a>(currently listening to this), <a class="text-dark" href="https://en.wikipedia.org/wiki/Strings_(band)">Strings</a>, and <a class="text-dark" href="https://en.wikipedia.org/wiki/A._R._Rahman" target="_blank">A.R.Rahman</a></p>
+		<a class="next_sect container-fluid circle_icon justify-content-center" href="#Projects">
 				<img src=".\assets\icons\down_pointer.svg" alt="Go to next section">
-			</a>
-		</div>
+		</a>
 	</div>
 </div>
 </div>
@@ -99,18 +95,23 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img width="45%" height="45%" src=".\assets\Caraousel\S_invaders.png" alt="Space Invaders Game">
-						<div class="carousel-caption d-none d-md-block">
+						<a href="https://github.com/SJT00/NesControllerGame" target="_blank">
+						<img width="640" height="360" src=".\assets\Caraousel\S_invaders.png" alt="Space Invaders Game">
+					</a>
+						<div class="carousel-caption d-none d-md-block" style="margin-bottom: -4%">
 							<h3>Space Invaders</h3>
 							<p>A Space Invader clone I made using python and its library pygame. Can be played with a keyboard, as well as a custom controller.</p>
 							<p>Sprites and font courtesy of the internet.</p>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img width="50%" height="50%" src=".\assets\Caraousel\N_Battle.png" alt="Flash Fighting Game">
-						<div class="carousel-caption d-none d-md-block">
+						<a href="https://www.newgrounds.com/portal/view/651835" target="_blank">
+							<img width="640" height="360" src=".\assets\Caraousel\N_Battle.png" alt="Flash Fighting Game">
+						</a>
+						<div class="carousel-caption d-none d-md-block" style="margin-bottom: -4.5%">
 							<h3>Flash Fighting Game</h3>
 							<p>A Fighting Game Demo I made using Adobe Flash, and its scripting language Actionscript.</p>
+							<br>
 							<p>Sprites courtesy of the internet.</p>
 						</div>
 					</div>
@@ -137,7 +138,7 @@
 </div>
 <!-- About Projects End-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <!-- Main JavaScript File -->

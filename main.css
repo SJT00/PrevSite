@@ -10,7 +10,13 @@ body{
 	font-size: 18px;
 	color: #fff;
 }
+
+img {max-width: 100%;}
+
 /* Navbar Start*/
+.navbar-custom{
+	background: #f8f9fa;
+}
 .nav-link{
 	font-size: 18px;
 	position: relative;

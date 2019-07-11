@@ -97,7 +97,7 @@ img {
 	background: #d6d4d3;
 }
 .round_icon{
-	border-radius: 10%;
+	border-radius: 20%;
 	background: #fff;
 	transition: background-color 250ms ease-in;
 }

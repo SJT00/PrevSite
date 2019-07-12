@@ -1,6 +1,6 @@
 $(function() {
-  var navHeight = $('.navbar').height(); // get height of navbar
-  $('li a').click(function (e) {
+  var navHeight = $('.nav').height(); // get height of navbar
+  $('a').filter('.onpage').click(function (e) {// change scroll behaviour of all <a> tags with onpage class
       e.preventDefault();
       var target = $(this.hash);
       $('html, body').animate({

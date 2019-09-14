@@ -2,6 +2,11 @@
 *, ::after, ::before {
     box-sizing: border-box;
 }
+@media only screen and (max-width: 650px) {
+  .skills{
+  	visibility: hidden;
+  }
+}
 :root {
 	--customblack:#1e1e1e;
 	--customwhite:#f8f9fa;
@@ -133,6 +138,7 @@ img {
 	color: var(--customblack);
 	min-height: 515px;
 	padding-top: 10vh;
+	overflow: hidden;
 }
 /* About_area End*/
 /* Projects_area Start*/
@@ -140,6 +146,7 @@ img {
 	background-color: var(--customblack);
 	min-height: 515px;
 	color: var(--customwhite);
+
 }
 .Play_button{
 	text-align: center;

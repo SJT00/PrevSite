@@ -23,8 +23,10 @@ function playgame(){
 // On Element load function
 $(function() {
   pglinks();
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
   if(document.URL.indexOf("#gamewv") >= 0){// Navigate user to playable game screen
-    navscrollto($("#Projects"));
     $(".carousel").carousel(1);
     playgame();
   }

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+:root {
+	--customblack:#1e1e1e;
+	--customwhite:#f8f9fa;
+	--navhover:#331e1e1e; /*color when nav items are hovered over*/
+	--secthover:#d6d4d3; /*color when next section icon is hovered over*/
+}
+html {
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	font-size: 18px;
+	color: var(--customwhite);
+}
+img {
+	max-width: 100%;
+}
+/* Navbar Start*/
+.navbar-custom{
+	background: var(--customwhite);
+}
+.navbar-custom .navbar-toggler-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+/* optional style active link */
+.navbar-custom .navbar-nav .nav-link.active {
+    background: var(--navhover);
+    transition: background 250ms ease-in-out;
+}
+.nav-link{
+	font-size: 18px;
+	position: relative;
+}
+/* Hovering highlight affect for nav-items start*/
+.nav-link::after {
+	content: "";
+	left: 0;
+	bottom:0;
+	width:100%;
+	height: 2px;
+	background: var(--customblack);
+	position: absolute;
+	transform: scaleX(0);
+	transform-origin: bottom;
+	transition: transform 250ms ease-in;
+}
+.nav-link:hover::after {
+	transform: scaleX(1);
+}
+/* Hovering highlight affect for nav-items end*/
+.navbar-brand{
+	font-size: 24px;
+	border-radius: 10%;
+	padding: 0px 2px;
+	border-color: var(--customblack);
+	border-style: solid;
+}
+/* Hovering highlight affect for nav-brand start*/
+
+/* Assuring that navigation and jumbotrons can be compactly placed*/
+.navbar{
+	margin-bottom: 0px;
+}
+.jumbotron{
+	margin-bottom: 0px;
+}
+/* Padding for the nav-links as the last one, "Contact" is in the corner and doesn't require right paddding*/
+.first_three{
+	padding: 0px 5px;
+}
+.last_one{
+	padding-left: 5px;
+}
+/* Navbar End*/
+/* Home_area Start height: 515px;*/
+.Home_area{
+	background-color: var(--customblack);
+	min-height: 577px;
+	padding-top: 20vh;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	}
+.name{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.icons{
+	justify-content: center;
+	text-align: center;
+	margin-top: 50px;
+}
+.circle_icon{
+	border-radius: 50%;
+	background: var(--customwhite);
+	transition: background-color 250ms ease-in;
+}
+.circle_icon:hover{
+	background: var(--secthover);
+}
+.round_icon{
+	border-radius: 20%;
+	background: var(--customwhite);
+	transition: background-color 250ms ease-in;
+}
+.round_icon:hover{
+	background: var(--secthover);
+}
+.next_sect{
+	display: flex;
+    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Home_area End*/
+/* About_area Start*/
+.About_area{
+	background-color: var(--customwhite);
+	color: var(--customblack);
+	min-height: 515px;
+	padding-top: 10vh;
+}
+/* About_area End*/
+/* Projects_area Start*/
+.Projects_area{
+	background-color: var(--customblack);
+	min-height: 515px;
+	color: var(--customwhite);
+}
+.Play_button{
+	text-align: center;
+}
+.Play_button button{
+	font-size:30px;
+}
+/* Projects_area End*/
+/* Contact_area Start*/
+.Contact_area{
+	background-color: var(--customwhite);
+	color: var(--customblack);
+	padding-top: 2vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	min-height: 40px;
+}
+/* Contact_area End*/

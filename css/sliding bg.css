@@ -1,0 +1,22 @@
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #1e1e1e 50%, #f8f9fa 50%);
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(0);
+  }
+  100% {
+    transform:translateX(100%);
+  }
+}

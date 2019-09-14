@@ -6,17 +6,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Saad Taj</title>
+	<!-- Tab Icon-->
+	<link rel="icon" href=".\assets\Logo.png">
 	<!-- Bootstrap CSS-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<!-- Main CSS-->
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href=".\css\main.css">
+	<!-- Effects CSS-->
+	<link rel="stylesheet" href=".\css\starry night.css">
+	<link rel="stylesheet" href=".\css\sliding bg.css">
+	<link rel="stylesheet" href=".\css\waves.css">
 </head>
 <body data-spy="scroll" data-target="#navbarContent" data-offset="70">
 	<!-- Nav Bar Starts Here-->
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-md fixed-top navbar-custom border-bottom">
 			<a class="navbar-brand" href="#" style="margin-left:1%;">
-				<span class="border border-dark text-dark rounded">SJT</span>
+				<span class="text-dark">SJT</span>
 			</a>
 			<!-- Collapsed Nav Bar-->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
@@ -32,11 +38,14 @@
 				<li class="nav-item last_one"><a class="nav-link text-dark onpage" href="#Contact">Contact</a></li>
 			</ul>
 		</div>
-	</div>
-</nav>
+	</nav>
+</div>
 <!-- Nav Bar Ends Here-->
 <!-- Home Section Start-->
 <div class="container-fluid Home_area" id="Home">
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
 	<div class="row justify-content-center">
 		<div class="name">
 			<h1>Saad Jahanzeb Taj</h1>
@@ -46,27 +55,27 @@
 	<div class="row icons">
 		<div class="col-3">
 			<a href="https://github.com/SJT00" target="_blank">
-				<img src=".\assets\icons\github.svg" height="50" width="50" class="circle_icon" alt="My Github">
+				<img src=".\assets\Icons\github.svg" height="50" width="50" class="circle_icon" alt="My Github">
 			</a>
 		</div>
 		<div class="col-3">
 			<a href="https://www.linkedin.com/in/saad-taj-b79024185" target="_blank">
-				<img src=".\assets\icons\linkedin.svg" height="50" width="50" class="round_icon" alt="My Linkedin">
+				<img src=".\assets\Icons\linkedin.svg" height="50" width="50" class="round_icon" alt="My Linkedin">
 			</a>
 		</div>
 		<div class="col-3">
 			<a href="mailto:sjahanze@uwaterloo.ca">
-				<img src=".\assets\icons\mail.svg" height="50" width="50" class="round_icon" alt="My Email">
+				<img src=".\assets\Icons\mail.svg" height="50" width="50" class="round_icon" alt="My Email">
 			</a>
 		</div>
 		<div class="col-3">
 			<a href=".\assets\Resume.pdf" target="_blank">
-				<img src=".\assets\icons\resume.svg" height="50" width="50" class="circle_icon" alt="My Resume">
+				<img src=".\assets\Icons\resume.svg" height="50" width="50" class="circle_icon" alt="My Resume">
 			</a>
 		</div>
 	</div>
 	<a class="next_sect row circle_icon onpage" href="#About">
-		<img src=".\assets\icons\down_pointer.svg" alt="Go to next section">
+		<img src=".\assets\Icons\down_pointer.svg" alt="Go to next section">
 	</a>
 </div>
 <!-- Home Section End-->
@@ -77,17 +86,16 @@
 		<p style="margin-left: 50px; margin-top:20px;">I am a second year Honours Mathematics student at the University of Waterloo, with an interest in Computer Science. In terms of my niche within Computer Science, I prefer creating interactive applications, whether they be games, organizational tools or just fun projects to learn new technologies.</p>
 		<p style="margin-left: 180px; margin-top:40px;">In terms of hobbies, I thoroughly enjoy all things history, particularly concerning the eastern world. I am also a big fan of music, particulary a mix of western and eastern instruments and vocals, examples including <a class="text-dark" href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">Coldplay</a>, <a class="text-dark" href="https://en.wikipedia.org/wiki/Shafqat_Amanat_Ali" target="_blank">Shafqat Amanat Ali</a>, <a class="text-dark" href="https://en.wikipedia.org/wiki/Strings_(band)">Strings</a>, and <a class="text-dark" href="https://en.wikipedia.org/wiki/A._R._Rahman" target="_blank">A.R.Rahman</a>.</p>
 		<a class="next_sect circle_icon onpage" href="#Projects">
-			<img src=".\assets\icons\down_pointer.svg" alt="Go to next section">
+			<img src=".\assets\Icons\down_pointer.svg" alt="Go to next section">
 		</a>
 	</div>
-</div>
 </div>
 <!-- About Section End-->
 <!-- Projects Section Start-->
 <div class="container-fluid Projects_area">
 	<div class="row">
 		<div class="col-12"  id="Projects">
-			<div style="margin-top: 30px; height: 400px;" id="Carousel-Projects" class="carousel slide" data-ride="carousel" align="center">
+			<div style="margin-top: 30px; height: 400px;" id="Carousel-Projects" class="carousel slide" data-ride="carousel" align="center" data-keyboard="false">
 				<ol class="carousel-indicators">
 					<li data-target="#Carousel-Projects" data-slide-to="0" class="active"></li>
 					<li data-target="#Carousel-Projects" data-slide-to="1"></li>
@@ -96,7 +104,7 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<a href="https://github.com/SJT00/NesControllerGame" target="_blank">
-							<img width="640" height="360" src=".\assets\Caraousel\S_invaders.png" alt="Space Invaders Game">
+							<img width="550" height="360" src=".\assets\Caraousel\S_invaders.png" alt="Space Invaders Game">
 						</a>
 						<div class="carousel-caption d-none d-md-block" style="margin-bottom: -4%">
 							<h3>Space Invaders</h3>
@@ -105,22 +113,24 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<a href="https://www.newgrounds.com/portal/view/651835" target="_blank">
-							<img width="640" height="360" src=".\assets\Caraousel\N_Battle.png" alt="Flash Fighting Game">
-						</a>
-						<div class="carousel-caption d-none d-md-block" style="margin-bottom: -4.5%;">
-							<h3>Flash Fighting Game</h3>
-							<p>A Fighting Game Demo I made using Adobe Flash, and its scripting language Actionscript.</p>
-							<br>
-							<p>Sprites courtesy of the internet.</p>
+						<object id ="gamewv" width="550" height="360" style="display:none" data="./assets/Games/gamewv.swf"></object>
+						<div id="gameimg">
+							<a href="https://www.newgrounds.com/portal/view/651835" target="_blank">
+								<img width="550" height="360" src=".\assets\Caraousel\N_Battle.png" alt="Flash Fighting Game">
+							</a>
+							<div class="carousel-caption d-none d-md-block" style="margin-bottom: -4.5%;">
+								<h3>Flash Fighting Game</h3>
+								<p>A Fighting Game Demo I made using Adobe Flash, and its scripting language Actionscript.</p>
+								<br>
+								<p>Sprites courtesy of the internet.</p>
+							</div>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<h3 style="margin-top:17%">Coming Soon!</h3>
 						<div class="carousel-caption d-none d-md-block">
-							<h3>Mobile Game</h3>
-							<p>An Android Game I am currently working on using Kotlin.</p>
-							<p>Sprites will be courtesy of the internet ㋡</p>
+							<h3>Mobile App</h3>
+							<p>An Android App I am currently working on, using Kotlin.</p>
 						</div>
 					</div>
 				</div>
@@ -135,22 +145,25 @@
 			</div>
 		</div>
 	</div>
+	<div class="Play_button">
+		<button type="button" class="btn btn-outline-light" id="play">Want To Play!</button>
+	</div>
 </div>
 <!-- Projects Section End-->
 <!-- Contact Section Start-->
-	<div class="container-fluid Contact_area" id="Contact">
-		<div class="row justify-content-center">
-			<div class="col-8">
-				<p>Contact me via my Email: sjahanze@uwaterloo.ca</p>
-			</div>
+<div class="container-fluid Contact_area" id="Contact">
+	<div class="row justify-content-center">
+		<div class="col-8">
+			<p>Contact me via my Email: sjahanze@uwaterloo.ca</p>
 		</div>
 	</div>
+</div>
 <!-- Contact Section End-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"></script>
 <!-- Main JavaScript File -->
-<script src="scripts/script.js"></script>
+<script src=".\js\mainscript.js"></script>
 </body>
 </html>

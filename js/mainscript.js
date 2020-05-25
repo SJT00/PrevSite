@@ -29,26 +29,33 @@ $(function () {
     $(".carousel").carousel(1);
     navscrollto($("#Projects"));
   }
+  var index = 0;
   $("#play").click(function () {
+    console.log("Clicked", index);
     switch (index) {
       case 0:
+        window.open("https://github.com/mhyeun/budgie", "_blank");
+        $("#play").html("Don't Budge! ㋡");
+        break;
+      case 1:
+        window.open("https://github.com/SJT00/Token", "_blank");
+        $("#play").html("Stay Safe!");
+        break;
+      case 2:
         window.location.href = "./assets/Games/S_invaders.zip";
         $("#play").html("Enjoy!");
-      case 1:
-        window.location.href = "./assets/Games/Gamewv.swf";
-        $("#play").html("Go Ahead!");
-      case 2:
-        $("#play").html("Stay Safe!");
-        window.location.href = "https://github.com/SJT00/Token";
+        break;
       case 3:
-        $("#play").html("Don't Budge! ㋡");
-        window.location.href = "http://https://github.com/mhyeun/budgie";
+        window.location.href = "./assets/Games/Gamewv.zip";
+        $("#play").html("Go Ahead!");
+        break;
     }
   });
   $(".carousel").on("slide.bs.carousel", function (event) {
-    console.log(event);
-    event.to >= 2
-      ? $("#play").html("Want to Try ?")
+    index = event.to;
+    console.log(index);
+    event.to <= 1
+      ? $("#play").html("Want To Try ?")
       : $("#play").html("Want To Play ?");
   });
 });

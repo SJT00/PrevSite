@@ -26,7 +26,7 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip(); // Initializes all pg tool tips
   if (document.URL.indexOf("#gamewv") >= 0) {
     // Navigate user to playable game screen
-    $(".carousel").carousel(2);
+    $(".carousel").carousel(3);
     navscrollto($("#Projects"));
   }
   var index = 0;

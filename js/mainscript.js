@@ -26,12 +26,11 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip(); // Initializes all pg tool tips
   if (document.URL.indexOf("#gamewv") >= 0) {
     // Navigate user to playable game screen
-    $(".carousel").carousel(1);
+    $(".carousel").carousel(3);
     navscrollto($("#Projects"));
   }
   var index = 0;
   $("#play").click(function () {
-    console.log("Clicked", index);
     switch (index) {
       case 0:
         window.open("https://github.com/mhyeun/budgie", "_blank");
@@ -53,7 +52,6 @@ $(function () {
   });
   $(".carousel").on("slide.bs.carousel", function (event) {
     index = event.to;
-    console.log(index);
     event.to <= 1
       ? $("#play").html("Want To Try ?")
       : $("#play").html("Want To Play ?");

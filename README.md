@@ -1,5 +1,5 @@
 # My Website:
-<img src="./Preview.PNG" title="Preview" alt="Preview" style="text-align:center"/>
+<p style="text-align:center"><img src="./Preview.PNG" title="Preview" alt="Preview" /></p>
 
 A portfolio website, to catalog my projects, and developing skills.
 Made using HTML, CSS, Jquery, Bootstrap, and Javascript.
